@@ -1,8 +1,5 @@
 import os
 
-# substitua pelo caminho real para o driver Oracle JDBC
-ORACLE_JDBC_DRIVER_PATH = '/path/to/oracle/jdbc/driver'
-
 # obtém o nome da Cell atual
 cell_name = AdminControl.getCell()
 print("Cell name: " + cell_name)
