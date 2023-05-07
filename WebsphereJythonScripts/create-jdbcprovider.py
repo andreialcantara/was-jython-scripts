@@ -28,9 +28,8 @@ jdbc_providers = [
 for provider_info in jdbc_providers:
     provider_id = '[-scope Cell=' + cell_name + ' -databaseType ' + provider_info['database_type'] + ' -providerType "' + provider_info['provider_type'] + '" -implementationType "' + provider_info['implementation_type'] + '" -name "' + provider_info['provider_name'] + '" -description "' + provider_info['provider_desc'] + '" -classpath [' + provider_info['classpath'] + '] -nativePath "" ]'
     AdminTask.createJDBCProvider(provider_id)
-    print("JDBC Provider " + provider_info['provider_name'] + " created successfully.")
+    print("JDBC Provider " + provider_info['provider_name'] + " criado com sucesso.")
 
 # Salva as alterações na configuração da célula
 AdminConfig.save()
 
-print("All JDBC Providers created successfully.")
