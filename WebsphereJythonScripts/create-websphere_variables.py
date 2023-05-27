@@ -21,7 +21,7 @@ for node in nodes:
         setWebSphereVariable ( variable["name"], variable["value"], nodeName=node, serverName=None, clusterName=None )
         print ("Variável de ambiente " + variable["name"] + " inserida com sucesso no Node " + node) 
       except:
-        print ("Algo deu erro, não foi possível adicionar as variáveis de ambiente no escopo dos Nodes!")
+        print ("Algo deu errado, não foi possível adicionar as variáveis de ambiente no escopo dos Nodes!")
     
  
 #Adiciona variaveis de ambiente no escopo da Cell
@@ -33,7 +33,7 @@ for variable in variables:
         cell_name = cell_parts[0].split("/")[-1]
         print("Variável de ambiente " + variable["name"] + " inserida com sucesso na Cell " +  cell_name)
       except:
-        print ("Algo deu erro, não foi possível adicionar as variáveis de ambiente no escopo da Cell!")
+        print ("Algo deu errado, não foi possível adicionar as variáveis de ambiente no escopo da Cell!")
   
        
 #Salva as configurações
