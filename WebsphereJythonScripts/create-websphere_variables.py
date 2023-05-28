@@ -1,6 +1,5 @@
 ##################################################
-## Description: Criação das WebSphere Variables 
-## no Cell scope e no Node scope. 
+## Description: Criação das WebSphere Variables no Cell scope e no Node scope. 
 ##################################################
 ## Version: 1.0.1
 ##################################################
